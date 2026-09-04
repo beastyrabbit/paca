@@ -23,7 +23,7 @@ jobs:
   # ---------------------------------------------------------------------------
   lint:
     name: Lint
-    runs-on: ubuntu-latest
+    runs-on: arc-paca
     timeout-minutes: 10
 
     defaults:
@@ -57,7 +57,7 @@ jobs:
   # ---------------------------------------------------------------------------
   test:
     name: Unit tests
-    runs-on: ubuntu-latest
+    runs-on: arc-paca
     timeout-minutes: 15
 
     defaults:
@@ -89,7 +89,7 @@ jobs:
   # ---------------------------------------------------------------------------
   build:
     name: Package build
-    runs-on: ubuntu-latest
+    runs-on: arc-paca
     timeout-minutes: 10
     needs: [lint, test]
 

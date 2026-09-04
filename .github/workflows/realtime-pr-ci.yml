@@ -17,7 +17,7 @@ concurrency:
 jobs:
   realtime-quality:
     name: Lint, typecheck, and build
-    runs-on: ubuntu-latest
+    runs-on: arc-paca
     timeout-minutes: 10
 
     defaults:
